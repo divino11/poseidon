@@ -9,6 +9,64 @@ $(document).ready(function () {
         $('.popup_hamam').css('display', 'none');
         $('.popup_sauna').css('display', 'none');
         $('.popup_fitobochka').css('display', 'none');
+        $('.popup_footerReserve').css('display', 'none');
+        $('.popup_headerReserve').css('display', 'none');
+    });
+});
+
+$(document).ready(function () {
+    $(".btnFooterReserve").click(function (e) {
+        $('.popup_footerReserve').css('display', 'block');
+    });
+    $(".btn__reserve-footer").click(function (e) {
+        e.preventDefault();
+        var form_data = $('#popup_footerReserve').serialize(); //собераем все данные из формы
+        $.ajax({
+            type: "POST", //Метод отправки
+            url: "/wp-content/themes/poseidon/mail_service.php", //путь до php фаила отправителя
+            data: form_data,
+            processData: false,
+            success: function () {
+                $('#popup_footerReserve')[0].reset();
+                $('.popup_footerReserve').css('display', 'none');
+            }
+        });
+    });
+});
+
+$(document).ready(function () {
+    $(".btn-reserve").click(function (e) {
+        $('.popup_headerReserve').css('display', 'block');
+    });
+    $(".btn__reserve-header").click(function (e) {
+        e.preventDefault();
+        var form_data = $('#popup_headerReserve').serialize(); //собераем все данные из формы
+        $.ajax({
+            type: "POST", //Метод отправки
+            url: "/wp-content/themes/poseidon/mail_service.php", //путь до php фаила отправителя
+            data: form_data,
+            processData: false,
+            success: function () {
+                $('#popup_headerReserve')[0].reset();
+                $('.popup_headerReserve').css('display', 'none');
+            }
+        });
+    });
+});
+
+$(document).ready(function () {
+    $(".btn_contact").click(function (e) {
+        e.preventDefault();
+        var form_data = $('#contactForm').serialize(); //собераем все данные из формы
+        $.ajax({
+            type: "POST", //Метод отправки
+            url: "/wp-content/themes/poseidon/mailContact.php", //путь до php фаила отправителя
+            data: form_data,
+            processData: false,
+            success: function () {
+                $('#contactForm')[0].reset();
+            }
+        });
     });
 });
 

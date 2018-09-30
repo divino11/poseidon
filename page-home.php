@@ -52,8 +52,9 @@ get_header();
             <div class="block5_front">
                 <div class="block5_front-wrapper1">
                     <img src="" alt="">
-                    <p>Хамам</p>
-                    <p></p>
+                    <p class="block5_front-title">Хамам</p><br>
+                    <p class="block5_front-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
                 </div>
             </div>
             <div class="block5_back">
@@ -67,8 +68,9 @@ get_header();
             <div class="block5_front">
                 <div class="block5_front-wrapper2">
                     <img src="" alt="">
-                    <p>Сауна</p>
-                    <p></p>
+                    <p class="block5_front-title">Сауна</p><br>
+                    <p class="block5_front-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
                 </div>
             </div>
             <div class="block5_back">
@@ -82,8 +84,9 @@ get_header();
             <div class="block5_front">
                 <div class="block5_front-wrapper3">
                     <img src="" alt="">
-                    <p>Фитобочка</p>
-                    <p></p>
+                    <p class="block5_front-title">Фитобочка</p><br>
+                    <p class="block5_front-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
                 </div>
             </div>
             <div class="block5_back">
