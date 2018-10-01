@@ -951,9 +951,9 @@ ul.nav.navbar-nav li a {
 }
 
 ul.nav.navbar-nav li a:after {
-    -ms-transition: -webkit-transform .4s ease-out, border-color .4s ease-out;
-    -webkit-transition: -webkit-transform .4s ease-out, border-color .4s ease-out;
-    transition: transform .4s ease-out, border-color .4s ease-out;
+    -ms-transition: -webkit-transform .4s ease-out,border-color .4s ease-out;
+    -webkit-transition: -webkit-transform .4s ease-out,border-color .4s ease-out;
+    transition: transform .4s ease-out,border-color .4s ease-out;
     position: absolute;
     display: block;
     bottom: -6px;
@@ -1187,6 +1187,7 @@ button.btn-reserve:hover {
     background-color: rgb(83, 81, 82);
     background-size: cover;
     height: 100%;
+    padding: 40px;
 }
 
 .block5_front-wrapper2 {
@@ -1194,6 +1195,7 @@ button.btn-reserve:hover {
     background-color: rgb(83, 81, 82);
     background-size: cover;
     height: 100%;
+    padding: 40px;
 }
 
 .block5_front-wrapper3 {
@@ -1201,10 +1203,39 @@ button.btn-reserve:hover {
     background-color: rgb(83, 81, 82);
     background-size: cover;
     height: 100%;
+    padding: 40px;
+}
+
+p.block5_front-title {
+    font-size: 25px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding-top: 30px;
+}
+
+p.block5_front-text {
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
 }
 
 .block5_back {
     background-color: #666666;
+}
+
+.block5_back p {
+    font-size: 25px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding-top: 40px;
 }
 
 .block5 {
@@ -1261,16 +1292,18 @@ a.block6_title:hover {
     margin: 0;
 }
 
-.block7_wrapper a {
+.block7_wrapper .btnFooterReserve {
     background-color: #000;
-    padding: 14px;
+    padding: 20px 40px;
     border-radius: 30px;
     color: #fff;
     font-weight: normal;
     transition: 0.4s linear;
+    text-transform: uppercase;
+    font-size: 20px;
 }
 
-.block7_wrapper a:hover {
+.block7_wrapper .btnFooterReserve:hover {
     background-color: #585858;
     color: #191919;
 }
@@ -1404,7 +1437,7 @@ p.service__point {
     padding: 10px 0;
 }
 
-.popup_hamam, .popup_sauna, .popup_fitobochka {
+.popup_hamam, .popup_sauna, .popup_fitobochka, .popup_footerReserve, .popup_headerReserve {
     margin: auto;
     text-align: center;
     position: fixed;
@@ -1452,6 +1485,13 @@ input.btn.btn__service-reserve {
     padding: 10px;
     color: #000;
     font-size: 14px;
+}
+
+.btn__reserve-header, .btn__reserve-footer {
+    width: 50% !important;
+    padding: 10px !important;
+    color: #000 !important;
+    font-size: 14px !important;
 }
 
 img.service_slider-img {
@@ -1529,11 +1569,11 @@ img.room_slider-img {
 
 #to-top {
     overflow: hidden;
-    border-radius: 200px !important;
+    border-radius: 200px!important;
     display: none;
     position: fixed;
     text-align: center;
-    line-height: 12px !important;
+    line-height: 12px!important;
     right: 17px;
     bottom: -30px;
     color: #fff;
@@ -1541,7 +1581,7 @@ img.room_slider-img {
     z-index: 9994;
     height: 29px;
     width: 29px;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0,0,0,0.25);
     background-repeat: no-repeat;
     background-position: center;
     transition: 0.3s linear;
@@ -1630,11 +1670,11 @@ a.btn.room_btn {
 }
 
 .room_block_main:hover .room_block_main-img {
-    -webkit-transform: scale3d(1.1, 1.1, 1);
-    -moz-transform: scale3d(1.1, 1.1, 1);
-    -ms-transform: scale3d(1.1, 1.1, 1);
-    -o-transform: scale3d(1.1, 1.1, 1);
-    transform: scale3d(1.1, 1.1, 1);
+    -webkit-transform: scale3d(1.1,1.1,1);
+    -moz-transform: scale3d(1.1,1.1,1);
+    -ms-transform: scale3d(1.1,1.1,1);
+    -o-transform: scale3d(1.1,1.1,1);
+    transform: scale3d(1.1,1.1,1);
 }
 
 .room_block_main:hover .room_block_main-btn {
@@ -1668,11 +1708,11 @@ a.btn.room_btn {
     z-index: 1;
     margin: 0 auto;
     pointer-events: none;
-    -webkit-transform: translateY(-50%) scale3d(.8, .8, 1);
-    -moz-transform: translateY(-50%) scale3d(.8, .8, 1);
-    -ms-transform: translateY(-50%) scale3d(.8, .8, 1);
-    -o-transform: translateY(-50%) scale3d(.8, .8, 1);
-    transform: translateY(-50%) scale3d(.8, .8, 1);
+    -webkit-transform: translateY(-50%) scale3d(.8,.8,1);
+    -moz-transform: translateY(-50%) scale3d(.8,.8,1);
+    -ms-transform: translateY(-50%) scale3d(.8,.8,1);
+    -o-transform: translateY(-50%) scale3d(.8,.8,1);
+    transform: translateY(-50%) scale3d(.8,.8,1);
     -webkit-transition: -webkit-transform .65s;
     -moz-transition: -moz-transform .65s;
     transition: transform .65s;
@@ -1684,11 +1724,11 @@ a.btn.room_btn {
 }
 
 .room_block_main:hover .room_block-info-container {
-    -webkit-transform: translateY(-49%) scale3d(1, 1, 1);
-    -moz-transform: translateY(-49%) scale3d(1, 1, 1);
-    -ms-transform: translateY(-49%) scale3d(1, 1, 1);
-    -o-transform: translateY(-49%) scale3d(1, 1, 1);
-    transform: translateY(-49%) scale3d(1, 1, 1);
+    -webkit-transform: translateY(-49%) scale3d(1,1,1);
+    -moz-transform: translateY(-49%) scale3d(1,1,1);
+    -ms-transform: translateY(-49%) scale3d(1,1,1);
+    -o-transform: translateY(-49%) scale3d(1,1,1);
+    transform: translateY(-49%) scale3d(1,1,1);
 }
 
 .room_block-info-text {
@@ -1721,11 +1761,13 @@ a.btn.room_btn {
 }
 
 .room_block_header {
-    display: -webkit-box;
+    display: inline-block;
+    width: 100%;
 }
 
 .room_block_footer {
-    display: -webkit-box;
+    display: inline-block;
+    width: 100%;
     margin-top: 10px;
 }
 
@@ -1885,9 +1927,9 @@ button.btn.btn_contact:hover {
     margin-top: 40px;
     display: inline-block;
     height: 233px;
-    -webkit-box-shadow: 0px 4px 16px -1px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 4px 16px -1px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 4px 16px -1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 4px 16px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 16px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 16px -1px rgba(0,0,0,0.75);
 }
 
 .massages .col-md-4 {
@@ -1951,94 +1993,4 @@ button.btn.btn_massage {
 
 button.btn.btn_massage:hover {
     color: #000;
-}
-
-@media (max-width: 998px) {
-    header {
-        height: auto;
-    }
-
-    button.btn-reserve {
-        margin: -5px auto 5px auto;
-        display: block;
-    }
-
-    .block1_wrapper {
-        height: auto;
-    }
-
-    .block1_wrapper p {
-        padding-bottom: 50px;
-    }
-
-    .block2, .block3, .block4 {
-        height: 300px;
-        display: inline-block;
-        width: 100%;
-    }
-
-    .block2_rightt, .block3_leftt, .block4_rightt {
-        height: 300px;
-        display: inline-block;
-        width: 100%;
-        position: relative;
-    }
-
-    .block2_leftt, .block3_rightt, .block4_leftt {
-        display: flex;
-        height: 300px;
-        position: relative;
-    }
-
-    .navbar {
-        min-height: 0;
-    }
-
-    button.navbar-toggle.collapsed {
-        border-color: #898989;
-        margin-top: -45px;
-    }
-
-    .navbar-toggle .icon-bar {
-        background-color: #898989;
-    }
-
-    h1.title_page {
-        margin-top: 20px;
-    }
-
-    .page-contact {
-        display: block;
-        height: auto;
-    }
-
-    .contact_wrapper {
-        display: block;
-    }
-
-    p.contact-title {
-        margin-top: 20px;
-    }
-
-    button.btn.btn_contact {
-        margin: auto;
-        display: block;
-        margin-bottom: 20px;
-    }
-
-    .massage_procedures {
-        width: 100%;
-        position: relative;
-        display: inline-block;
-        align-items: center;
-    }
-
-    .massage_time_procedure, .massage_price_procedure {
-        width: 100%;
-    }
-
-    button.btn.btn_massage {
-        width: 100%;
-        margin-top: 10px;
-    }
 }
